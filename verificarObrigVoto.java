@@ -17,8 +17,7 @@ public class verificarObrigVoto {
         if(idade >= 18 && idade <= 70){
            System.out.println(" O eleitor é obrigado votar ");
         }
-
-
+        scanner.close();
             
     }
 }
