@@ -12,7 +12,7 @@ public class AdivinharNumero {
         numeroQualquer = random.nextInt(bound: 11);
 
         while(numeroQualquer != numeroUsuario);
-            System.out.print(" Tclsente acertar o número de 0 a 10");
+            System.out.print(" Tente acertar o número de 0 a 10");
             numerousuario = scanner.nextInt();
 
             if( numeroQualquer == nemeroUsuario);
