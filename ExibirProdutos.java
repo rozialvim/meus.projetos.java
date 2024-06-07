@@ -2,18 +2,19 @@ import java.util.Scanner;
 public class ExibirProdutos {
     public static void main( String[] args){
         Scanner scanner = new Scanner(System.in);
-        int opcao = 0;
-        while (opcao ==1) {
-            System.out.println(" CONSULTA DE PRODUTO.");
+        int opcaoMenu= 1, codigoProduto; 
+        while (opcaoMenu ==1) {
+            System.out.println(" CONSULTA DE PRODUTOS.");
             System.out.println(" 1 -Consultar produto.");
             System.out.println(" 2 - Sair do programa.");
+           
             System.out.println(" Digite a opcao:");
-            opcao = scanner.nextInt();
+            opcaoMenu = scanner.nextInt();
 
-            if (opcao==1){
+            if (opcaoMenu ==1 ){
                 System.out.print("Digite o código do produto");
 
-                switch(opcao){
+                switch(codigoProduto){
                     case 5478 :
                     System.out.println(" O produto selecionado foi arroz de 5 kg:");
                     System.out.println(" preço unitário: R$ 15,90");
@@ -76,8 +77,13 @@ public class ExibirProdutos {
                     break;
                     
                     default:
+                    System.out.println (" Opção digitada não existe");
                         break;
                 }
+            }else if ( opcaoMenu == 2) {
+                System.out.println(" >>>> Saindo do programa 3...2...1";
+            }
+                
             }
         }
         scanner.close();
