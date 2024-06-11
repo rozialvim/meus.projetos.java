@@ -81,11 +81,10 @@ public class ExibirProdutos {
                         break;
                 }
             }else if ( opcaoMenu == 2) {
-                System.out.println(" >>>> Saindo do programa 3...2...1";
+                System.out.println(" >>>> Saindo do programa 3...2...1");
             }
-                
+            scanner.close();    
             }
         }
-        scanner.close();
+        
     }
-}
