@@ -1,9 +1,9 @@
 import java.util.Scanner;
 public class QuizGame {
-    public static void main(String[]args){}
+    public static void main(String[]args){
     Scanner scanner = new Scanner(System.in);
     String nomeUsuario;
-    int opçaoUsuario, posicao=0,limiteResposta=0, pontuacao=0;
+    int opcaoUsuario, posicao=0,limiteRespostas=0, pontuacao=0;
     char[] gabarito = {'C','B','A','B','C','A','D','C','D','C'};
     char[]resposta = new char[10];
     String[]perguntas = {
@@ -19,24 +19,41 @@ public class QuizGame {
         "QUIZ 10. Quem pintou a Mona Lisa?\nA) Vincent van Gogh\nB) Pablo Picasso\nC) Leonardo da Vinci\nD) Michelangelo"
     };
     System.out.println("CARREGANDO O QUIZ GAME>>>>");
-    system.out.print(">>>> DIGITE SEU NOME: ");
+    System.out.print(">>>> DIGITE SEU NOME: ");
     nomeUsuario = scanner.nextLine();
     System.out.println("============================");
     System.out.println("##### BEM-VINDO AO QUIZ GAME- " + nomeUsuario + "#####");
-    System.out.println(">>>> DICA: Utilize letra maiúscula em cada resposta das perguntas<<<<<");
+    System.out.println(">>>> DICA: Utilize letra maiúscula em cada resposta das perguntas<<<<<");ystem
     System.out.println("Deseja jogar?");
     System.out.println("1 - SIM");
     System.out.println("2 - NÂO");
-    System.out.println(">>>>Digite uma opção");
+    System.out.println(">>>> Digite uma opção: " );
     opcaoUsuario = scanner.nextInt();
     while(opcaoUsuario == 1){
         System.out.println("==========================");
         System.out.println("perguntas[posicao]");
         System.out.println("Sua resposta é:");
-        respostas[posicao] = scanner.next().chartAt(index:0);
+        resposta[posicao] = scanner.next().chartAt(0);
+        posicao++;
+        limiteRespostas++;
+        if (limiteResostas == 10){
+            for(int indice = 0; indice< gabarito.length; indice++){
+                if(gabarito[indice] == respostas[indice]){
+                    pontuacao = pontuacao + 1;
+                    system.out.println("===========================");
+                    System.out.println(" FIM DE JOGO- Sua pontuação foi " + pontuacao);
+                    break;
+                }
+            }
     if(opcaoUsuario ==2){
+
         System.out.println("============================");
         System.out.println("Saindo do QUIZ GAME em 3...2...1... - Até a próxima!");
-
+    }
+    Scanner.close();
+} 
+    }
+}
+    
 
     
