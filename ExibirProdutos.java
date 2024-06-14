@@ -1,20 +1,15 @@
-import java.util.Scanner;
-public class ExibirProdutos {
+import java.util.Scanner;    
+public class exibirProdutos {
     public static void main( String[] args){
         Scanner scanner = new Scanner(System.in);
-        int opcaoMenu= 1, codigoProduto; 
-        while (opcaoMenu ==1) {
+        int codigoProduto = 1; 
+        while (codigoProduto != 2) {
             System.out.println(" CONSULTA DE PRODUTOS.");
             System.out.println(" 1 -Consultar produto.");
             System.out.println(" 2 - Sair do programa.");
-           
-            System.out.println(" Digite a opcao:");
-            opcaoMenu = scanner.nextInt();
-
-            if (opcaoMenu ==1 ){
-                System.out.print("Digite o código do produto");
-
-                switch(codigoProduto){
+            System.out.print(" Digite a opcao: ");
+            codigoProduto = scanner.nextInt();
+                switch (codigoProduto) {
                     case 5478 :
                     System.out.println(" O produto selecionado foi arroz de 5 kg:");
                     System.out.println(" preço unitário: R$ 15,90");
@@ -50,7 +45,6 @@ public class ExibirProdutos {
                     case 6141 :
                     System.out.println(" O produto selecionado foi margarina de 500g:");
                     System.out.println(" preço unitário: R$ 4,50");
-
                     case 1030 :
                     System.out.println(" O produto selecionado foi sabão em pó de 1kg:");
                     System.out.println(" preço unitário: R$ 10,00");
@@ -75,16 +69,17 @@ public class ExibirProdutos {
                     System.out.println(" O produto selecionado foi pasta de dente 90g:");
                     System.out.println(" preço unitário: R$ 3,50");
                     break;
-                    
+                    case 2:
+                    System.out.println("Saindo do programa! ");
                     default:
+                    if (codigoProduto!=2) {
                     System.out.println (" Opção digitada não existe");
-                        break;
+                    }
+                    break;
                 }
-            }else if ( opcaoMenu == 2) {
-                System.out.println(" >>>> Saindo do programa 3...2...1");
             }
-            scanner.close();    
-            }
+            scanner.close(); 
         }
-        
     }
+
+
