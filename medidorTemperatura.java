@@ -15,7 +15,6 @@ public class medidorTemperatura {
         }else if(temperatura>30){
             System.out.println(" Calor exessivo! Risco de insolação.");
         }
-
         scanner.close();    }
 
     

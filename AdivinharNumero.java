@@ -7,10 +7,10 @@ public class AdivinharNumero {
         int numeroQualquer; int numeroUsuario = -1;
         numeroQualquer = random.nextInt(11);
         while(numeroQualquer!=numeroUsuario) {
-            System.out.print(" Tente acertar o número de 0 a 10:");
+            System.out.print(" Tente acertar o número de 0 a 10: ");
             numeroUsuario = scanner.nextInt();
             if (numeroQualquer==numeroUsuario) {
-               System.out.println("Você acertou, o numero qualquer é:" + numeroQualquer);
+               System.out.println("Você acertou, o numero qualquer é: " + numeroQualquer);
              
             } else {
                 System.out.println("Você errou!");
