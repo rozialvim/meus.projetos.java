@@ -13,5 +13,6 @@ public class medidodetemperatura2 {
         } else {
             System.out.println("Cuidado Poderá nevar.");
         }
+        scanner.close();
     }
 }
